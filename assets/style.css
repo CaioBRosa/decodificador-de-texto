@@ -1,0 +1,68 @@
+/* Configurações gerais para o corpo da página */
+body {
+  margin: 0; /* Remove as margens padrão do corpo da página */
+  height: 100vh; /* Ajusta a altura para ocupar 100% da altura da tela (viewport) */
+  display: flex; /* Usa o modelo flexível para organizar os elementos internos */
+  flex-direction: column; /* Organiza os filhos em coluna (verticalmente) */
+  align-items: center; /* Centraliza os filhos horizontalmente */
+  justify-content: center; /* Centraliza os filhos verticalmente */
+  background-image: url('Digital_rain_animation.gif'); /* Adiciona um GIF como imagem de fundo */
+  background-size: cover; /* Garante que o GIF cubra todo o fundo */
+}
+
+/* Configurações para o contêiner dos botões */
+.button-container {
+  margin-top: 25px; /* Adiciona um espaçamento superior de 25 pixels */
+  display: flex; /* Usa o modelo flexível para organizar os elementos internos */
+  justify-content: flex-end; /* Alinha os filhos à direita do contêiner */
+}
+
+/* Estilo dos botões */
+button {
+  margin-left: 265px; /* Adiciona um espaçamento à esquerda de 275 pixels */
+  padding: 10px 20px; /* Adiciona um espaçamento interno de 10 pixels superior/inferior e 20 pixels à esquerda/direita */
+  color: white; /* Cor do texto dos botões */
+  background-color: rgb(79, 196, 56); /* Cor de fundo dos botões (verde) */
+  border: none; /* Remove a borda dos botões (opcional) */
+  cursor: pointer; /* Adiciona o ícone de cursor de ponteiro ao passar o mouse (opcional) */
+  border-radius: 10px; /* Adiciona bordas arredondadas aos botões */
+  font-size: 18px; /* Ajusta o tamanho da fonte conforme necessário */
+}
+
+/* Ajustes para o último botão */
+button:last-child {
+  margin-left: 10px; /* Adiciona um espaçamento à esquerda de 10 pixels para o último botão */
+}
+
+/* Configurações para o contêiner principal dos inputs */
+.container {
+  display: flex; /* Usa o modelo flexível para organizar os elementos internos */
+  flex-direction: row; /* Organiza os filhos em linha (horizontalmente) */
+  align-items: center; /* Centraliza os filhos verticalmente */
+}
+
+/* Estilo do contêiner dos inputs */
+.input-container {
+  text-align: left; /* Alinha o texto à esquerda dentro do contêiner */
+  margin-right: 20px; /* Adiciona um espaçamento à direita de 20 pixels */
+}
+
+/* Estilo das labels dos inputs */
+label {
+  display: block; /* Torna as labels elementos de bloco (ocupam a largura total disponível) */
+  margin-left: 5px; /* Adiciona um espaçamento à esquerda de 5 pixels */
+  margin-bottom: 5px; /* Adiciona um espaçamento inferior de 5 pixels */
+  color: rgb(79, 196, 56); /* Cor do texto das labels verde */
+  font-weight: bold; /* Torna o texto em negrito */
+  font-size: 20px; /* Ajusta o tamanho da fonte dos inputs conforme necessário */
+}
+
+/* Estilo dos inputs */
+#input1, #input2 {
+  width: 250px; /* Define a largura dos inputs como 250 pixels */
+  height: 425px; /* Define a altura dos inputs como 425 pixels */
+  resize: none; /* Desativa a capacidade de redimensionamento dos inputs */
+  color: rgb(0, 0, 0); /* Adiciona a cor branca ao texto do input */
+  font-size: 20px; /* Ajusta o tamanho da fonte dos inputs conforme necessário */
+  word-wrap: break-word; /* Permite que o texto quebre para a próxima linha automaticamente */
+}
